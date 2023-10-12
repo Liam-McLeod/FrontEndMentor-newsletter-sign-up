@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+
+  <div class="registration-card">
+
+    <picture class="main-image">
+      <source media="(min-width: 700px)" srcset="assets/images/illustration-sign-up-desktop.svg">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Main Image">
+    </picture>
+    
+
+    <div class="content">
+      <h1 class="title">Stay updated!</h1>
+      <p class="desc">Join 60,000+ product managers receiving monthly updates on:</p>
+
+      <div class="feature-list">
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="checkmark icon">
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="checkmark icon">
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="list-item">
+          <img src="assets/images/icon-list.svg" alt="checkmark icon">
+          <p>And much more!</p>
+        </div>
+      </div>
+
+      <form>
+        <div class="form-labels">
+          <p>Email address</p>
+          <p class="error-message hidden">Valid Email Required</p>
+        </div>
+        <input type="text" placeholder="email@company.com" id="email">
+        <button type="submit">Subscribe to monthly newsletter
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <!-- Sign-up form end -->
+  
+  <!-- Success message start -->
+  <div class="success-card hidden">
+    <img class="success-icon" src="assets/images/icon-success.svg" alt="checkmark icon">
+    <h1 class="title">Thanks for subscribing!</h1>
+    <p class="desc">A confirmation email has been sent to <span class="success-message"></span>
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button class="dismiss-btn">Dismiss message</button>
+  </div>
+
+  <!-- Success message end -->
+  
+  <script src="scripts.js"></script>
+</body>
+</html>

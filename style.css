@@ -1,0 +1,180 @@
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family-default: 'Roboto', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+    
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Both Cards*/
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-default);
+    font-weight: var(--fw-regular);
+    font-size:16px;
+    color: var(--Charcoal-Grey);
+}
+
+button {
+    color: var(--White);
+    background-color: var(--Dark-Slate-Grey);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.desc {
+    line-height: 1.7;
+}
+
+/* Registration Card */
+.registration-card {
+    display: grid;
+    gap: 0.5rem;
+    max-width: 58rem;
+}
+
+.content {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.feature-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.list-item {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+form {
+    display: grid;
+}
+
+.form-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-weight: var(--fw-bold);
+    font-size: 0.8rem;
+}
+
+form input {
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--Grey);
+    margin-bottom: 1.5rem;
+}
+
+/* Success Card */
+
+.success-card {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 9rem;
+    max-width: 31rem;
+}
+
+.success-message {
+    font-weight: var(--fw-bold);
+}
+
+.success-icon {
+    margin-bottom: 1rem;
+    width: 4rem;
+}
+
+.dismiss-btn {
+    margin-top: auto;
+}
+
+/* hidden until error */
+
+.error {
+    color: var(--Tomato);
+    border-color: var(--Tomato);
+    background-color: hsl(2, 100%, 89%)
+}
+
+.error-message {
+    color: var(--Tomato);
+}
+
+@media (min-width: 700px) {
+
+    body {
+        background-color: var(--Charcoal-Grey);
+        align-items: center;
+    }
+
+    /* Registration Card */
+    .registration-card {
+        background-color: var(--White);
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1.5rem;
+        border-radius: 2rem;
+        gap: 2rem;
+    }
+
+    .content {
+        align-content: center;
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    /* Success Card */
+    .success-card {
+        background-color: var(--White);
+        padding: 3.5rem;
+        border-radius: 2rem;
+        margin: 0rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
