@@ -17,8 +17,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
--  [Solution URL](https://www.frontendmentor.io/solutions/ping-coming-soon-page-ojpu4jxGJ_)
--  [Live Site URL](https://liam-mcleod.github.io/Frontendmentor-Ping-Coming-Soon-Page/)
+-  [Solution URL](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-success-message-rpSsxjlW2r)
+-  [Live Site URL](https://liam-mcleod.github.io/FrontEndMentor-newsletter-sign-up/)
 
 ## Author
 - Frontend Mentor - [@Liam-McLeod](https://www.frontendmentor.io/profile/Liam-McLeod)
